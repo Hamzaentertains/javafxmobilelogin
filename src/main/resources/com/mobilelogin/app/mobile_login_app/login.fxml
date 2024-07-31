@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1280.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mobilelogin.app.mobile_login_app.LoginController">
+    <top>
+        <AnchorPane prefHeight="50.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="backButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #1A2026;" text="←" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane prefHeight="530.0" prefWidth="720.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="220.0" layoutY="220.0" prefHeight="33.0" prefWidth="284.0" text="Welcome back! Glad to see you, Again!" textAlignment="CENTER">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="emailField" layoutX="220.0" layoutY="300.0" prefHeight="30.0" prefWidth="280.0" promptText="Email" />
+                <PasswordField fx:id="passwordField" layoutX="220.0" layoutY="350.0" prefHeight="30.0" prefWidth="280.0" promptText="Password" />
+                <Button fx:id="loginButton" layoutX="220.0" layoutY="400.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="281.0" style="-fx-background-color: #1A2026;" text="Login" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </center>
+    <bottom>
+        <AnchorPane prefHeight="228.0" prefWidth="720.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="180.0" layoutY="50.0" text="Don't have an account?">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Text fx:id="registerText" fill="#36abd9" layoutX="401.0" layoutY="70.0" text="Register Now" underline="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>
