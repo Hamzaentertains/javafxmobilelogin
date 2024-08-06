@@ -51,6 +51,16 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>com.gluonhq</groupId>
+                <artifactId>gluonfx-maven-plugin</artifactId>
+                <version>1.0.9</version>
+                <configuration>
+                    <graalvmHome>/Library/Java/JavaVirtualMachines/graalvm-community-openjdk-22.0.2+9.1/Contents/Home</graalvmHome>
+                    <target>android</target>
+                    <mainClass>com.mobilelogin.app.mobile_login_app.HelloApplication</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
